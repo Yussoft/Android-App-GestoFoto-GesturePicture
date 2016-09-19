@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#d8d9d9"
+    tools:context="com.npi.yus.appgestofoto.MainActivity">
+
+    <ImageView
+        android:id="@+id/b11"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/b12" />
+    <ImageView
+        android:id="@+id/b12"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b21"
+        android:layout_alignStart="@+id/b22" />
+    <ImageView
+        android:id="@+id/b13"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/b23" />
+    <ImageView
+        android:id="@+id/b21"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b11"
+        android:layout_toStartOf="@+id/b22" />
+    <ImageView
+        android:id="@+id/b22"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b12"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/b23"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/b22"
+        android:layout_toEndOf="@+id/b22" />
+    <ImageView
+        android:id="@+id/b31"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b21"
+        android:layout_alignEnd="@+id/b21" />
+    <ImageView
+        android:id="@+id/b32"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/b31"
+        android:layout_alignStart="@+id/b22" />
+    <ImageView
+        android:id="@+id/b33"
+        android:src="@drawable/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/b32"
+        android:layout_alignStart="@+id/b23" />
+
+    <Button
+        android:id="@+id/newGestureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_gesture"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/introTextView" />
+
+    <TextView
+        android:text="@string/intro_text"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/introTextView"
+        android:layout_above="@+id/newGestureButton"
+        android:layout_alignStart="@+id/b31"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_gesture"
+        android:id="@+id/clearGestureButton"
+        android:layout_below="@+id/introTextView"
+        android:layout_alignEnd="@+id/b33" />
+
+
+</RelativeLayout>

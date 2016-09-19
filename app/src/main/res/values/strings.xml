@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">appGestoFoto</string>
+    <string name="intro_text">Bienvenido a appGestoFoto, primero realiza un gesto y pulsa el botón
+        de "Nuevo Gesto" para grabarlo, después prueba a hacer el gesto para abrir la cámara.
+    </string>
+    <string name="new_gesture">Guardar gesto.</string>
+    <string name="clear_gesture">Limpiar gesto.</string>
+</resources>
